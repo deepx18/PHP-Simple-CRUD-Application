@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin flex ($ai, $jc, $fd) {
+    display: flex;
+    align-items: $ai;
+    justify-content: $jc;
+    flex-direction: $fd;
+}
+
+body {
+    @include flex(center, center, column);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    height: 50vh;
+}
+
+form {
+    @include flex(start, center, column);
+    min-width: 400px;
+    width: 60%;
+    gap: 10px;
+
+    label {
+        font-size: 1.3rem;
+    }
+    
+    input:not(input[type="submit"]) {
+        border: 1px solid #d7d2d2;
+        outline: none;
+        border-radius: 5px;
+        width: 95%;
+        height: 30px;
+        padding: 10px;
+        font-size: 1rem;
+
+        &:hover {
+            border: 2px solid skyblue;
+        }
+        &:focus {
+            border: 2px solid skyblue;
+        }
+    }
+
+    input[type="submit"] {
+        width: 80px;
+        height: 30px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: lighten($color: #0000ff, $amount: 5%);
+        color: #fff;
+        cursor: pointer;
+
+        &:hover {
+            background-color: lighten($color: #0000ff, $amount: 15%);
+        }
+
+    }
+}

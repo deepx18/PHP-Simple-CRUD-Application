@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  height: 50vh;
+}
+
+form {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 400px;
+  width: 60%;
+  gap: 10px;
+}
+form label {
+  font-size: 1.3rem;
+}
+form input:not(input[type=submit]) {
+  border: 1px solid #d7d2d2;
+  outline: none;
+  border-radius: 5px;
+  width: 95%;
+  height: 30px;
+  padding: 10px;
+  font-size: 1rem;
+}
+form input:not(input[type=submit]):hover {
+  border: 2px solid skyblue;
+}
+form input:not(input[type=submit]):focus {
+  border: 2px solid skyblue;
+}
+form input[type=submit] {
+  width: 80px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: rgb(25.5, 25.5, 255);
+  color: #fff;
+  cursor: pointer;
+}
+form input[type=submit]:hover {
+  background-color: rgb(76.5, 76.5, 255);
+}
+
+/*# sourceMappingURL=style.css.map */
