@@ -10,11 +10,11 @@ if (isset($_POST["update"])) {
     $query = "UPDATE `users` SET  name = '$name', email= '$email', mobile = '$number', password = '$password' WHERE id=$id";
     $result = mysqli_query($link, $query);
     if ($result) {
-        header("location: display.php");
+        header("location: index.php");
 
     } else {
         echo "problem";
-        header("location: display.php");
+        header("location: index.php");
 
     }
 }

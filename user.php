@@ -10,7 +10,7 @@ if (isset($_POST["submit"])) {
     values ( '$name', '$email', '$number', '$password' ) ";
     $result = mysqli_query($link, $sql_query);
     if ($result) {
-        header("Location: display.php");
+        header("Location: index.php");
     }
 }
 

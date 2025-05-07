@@ -7,5 +7,5 @@ if (isset($_GET["deleteid"])) {
     $result = mysqli_query($link, $query);
 
     echo $result;
-    header("location: display.php");
+    header("location: index.php");
 }
